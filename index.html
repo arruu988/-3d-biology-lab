@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Biology Lab — NEET 2027 | Test 04 Biology</title>
+<meta name="description" content="Interactive 3D Biology for NEET 2027: DNA, animal & plant cells, human heart, body systems, Test 04 Biology (22 Nov 2026) with chapter notes and MCQs.">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head><body>
+<header><div class="nav"><div class="logo">🧬 3D <span>Biology Lab</span></div><span class="badge">NEET 2027 • India</span>
+<nav><a href="#cells">Cells</a><a href="#heart">Heart</a><a href="#systems">Systems</a><a href="#dna">DNA</a><a href="#test04">Test 04</a><a href="#quiz">Quiz</a><a href="#notes">Notes</a></nav></div></header>
+<main>
+<section class="hero"><div>
+<p class="eyebrow">NEET 2027 • Learn by touching, not just reading</p>
+<h1>Biology in 3D.<br>Samajh aayega,<br><span style="color:#22d3ee">yaad bhi rahega.</span></h1>
+<p class="lead">Drag the DNA, click a cell organelle, feel the heart beat. Every topic here is mapped to NCERT — and to your next test.</p>
+<div class="chips"><span class="chip">🧬 DNA Helix</span><span class="chip">🔬 Animal + Plant Cell</span><span class="chip">❤️ Beating Heart</span><span class="chip">📝 40 MCQs</span><span class="chip">🎯 Test 04 — 22 Nov</span></div>
+<p><a class="btn" href="#test04">Start Test 04 Revision →</a> <a class="btn ghost" href="#quiz">Take the Quiz</a></p>
+<p class="note">Tip: 3D ko mouse / finger se drag karo — ghumega. Kisi bhi coloured part par click karo, uski info khul jayegi.</p>
+</div>
+<div class="canvas-wrap tall"><div id="dna-wrap"></div><div class="hint">↻ Drag to rotate the DNA • A–T, G–C</div></div></section>
+
+<section id="test04" style="background:linear-gradient(135deg,#3b0764,#0e7490);border:1px solid #7c3aed;border-radius:22px;padding:26px;margin-top:20px">
+<p class="eyebrow" style="color:#fde68a">⭐ Most important right now</p>
+<h2>Test 04 — 22 Nov 2026 (Sunday)</h2>
+<p class="lead" style="color:#e0f2fe">NEET Dropper Real Test Series. Biology ke ye chapters pakke kar lo — neeche notes, diagrams aur har chapter ke 5 MCQs hain. <b id="countdown">11 days left</b> (11 Nov se).</p>
+<div class="cards" id="test04-cards">
+<div class="card"><div class="icon">🫁</div><h3>Breathing &amp; Exchange of Gases</h3><p>Respiratory system, breathing mechanism, alveoli, O₂/CO₂ transport, disorders.</p><a href="#ch-breathing">Read notes ↓</a></div>
+<div class="card"><div class="icon">🩸</div><h3>Body Fluids &amp; Circulation</h3><p>Blood, lymph, human heart, cardiac cycle, double circulation, ECG.</p><a href="#ch-fluids">Read notes ↓</a></div>
+<div class="card"><div class="icon">🫘</div><h3>Excretory Products &amp; Elimination</h3><p>Kidney, nephron, urine formation, osmoregulation, disorders.</p><a href="#ch-excretory">Read notes ↓</a></div>
+<div class="card"><div class="icon">🌿</div><h3>Plant Kingdom</h3><p>Algae, Bryophyta, Pteridophyta, Gymnosperms, Angiosperms — chart yaad karo.</p><a href="#ch-plantkingdom">Read notes ↓</a></div>
+<div class="card"><div class="icon">🔁</div><h3>Cell Cycle &amp; Cell Division</h3><p>Repeat from Test 03 — mitosis, meiosis, phases, significance.</p><a href="#ch-cellcycle">Read notes ↓</a></div>
+<div class="card"><div class="icon">🧪</div><h3>Biomolecules &amp; Cell — Unit of Life</h3><p>Repeat — proteins, carbs, lipids, enzymes, cell organelles.</p><a href="#ch-biomolecules">Read notes ↓</a></div>
+</div>
+<h3 style="margin-top:24px">✅ Chapter-wise Revision Checklist</h3>
+<p class="note">Tick karte jao — progress save ho jayega (is browser me). <span id="check-progress"></span></p>
+<div class="cards" id="checklist"></div>
+<p><a class="btn" href="#test04-quiz">Test 04 Quiz — 30 MCQs →</a></p>
+</section>
+
+<section id="cells"><p class="eyebrow">Interactive 3D</p><h2>Animal Cell — Click any organelle</h2>
+<p class="lead">Nucleus, mitochondria, ribosome, ER, Golgi, lysosome — sab clickable hain.</p>
+<div class="grid2"><div class="canvas-wrap tall"><div id="animal-wrap"></div><div class="hint">Click a coloured part • Drag to rotate</div></div>
+<div><div class="panel" id="animal-info"><span class="tag">Animal Cell</span><h3>Click an organelle 👆</h3><p>3D cell me kisi bhi part par click karo, ya neeche button dabao.</p><div class="neet-fact"><b>NEET fact:</b> Animal cell me cell wall aur chloroplast <b>nahi</b> hote — ye plant cell ki pehchan hai.</div></div><div class="org-btns" id="animal-btns"></div></div></div></section>
+
+<section><h2>Plant Cell — Click any organelle</h2>
+<p class="lead">Cell wall, chloroplast aur badi vacuole — plant cell ki 3 pehchan.</p>
+<div class="grid2"><div class="canvas-wrap tall"><div id="plant-wrap"></div><div class="hint">Click a coloured part • Drag to rotate</div></div>
+<div><div class="panel" id="plant-info"><span class="tag">Plant Cell</span><h3>Click an organelle 👆</h3><p>Chloroplast par click karke photosynthesis dekho.</p><div class="neet-fact"><b>NEET fact:</b> Plant vacuole cell ke <b>90% volume</b> tak ho sakti hai — turgidity ke liye zaroori.</div></div><div class="org-btns" id="plant-btns"></div></div></div></section>
+
+<section id="heart"><p class="eyebrow">Interactive 3D • Body Fluids &amp; Circulation</p><h2>Human Heart — Beating 3D Heart</h2>
+<p class="lead">Ye heart dhadak raha hai — bilkul tumhare heart ki tarah, ~72 beats/min. Chambers par click karo.</p>
+<div class="grid2"><div class="canvas-wrap tall"><div id="heart-wrap"></div><div class="hint">❤️ Beating • Click a chamber • Drag to rotate</div></div>
+<div><div class="panel" id="heart-info"><span class="tag">Human Heart</span><h3>Click a chamber 👆</h3><p>Right atrium, left ventricle — sab alag colour me hain.</p><div class="neet-fact"><b>NEET fact:</b> Heart ek din me lagbhag <b>1,00,000 baar</b> dhadakta hai aur ~7,500 L blood pump karta hai.</div></div><div class="org-btns" id="heart-btns"></div>
+<p class="note" style="margin-top:12px"><b>Blood flow:</b> Vena cava → Right Atrium → Right Ventricle → Lungs → Left Atrium → Left Ventricle → Aorta → Body. <br>Double circulation: Pulmonary (heart↔lungs) + Systemic (heart↔body).</p></div></div></section>
+
+<section id="systems"><p class="eyebrow">Human Body</p><h2>Human Body Systems — Ek nazar me</h2>
+<div class="cards">
+<div class="card"><div class="icon">🍽️</div><h3>Digestive</h3><div class="diagram">Mouth → <span>Stomach</span> → Small Intestine → Large Intestine</div><p>Amylase (mouth), pepsin (stomach), bile (liver), trypsin + lipase (pancreas). Absorption: villi in ileum.</p></div>
+<div class="card"><div class="icon">🫁</div><h3>Respiratory</h3><div class="diagram">Nose → Trachea → <span>Bronchi</span> → Alveoli</div><p>Gas exchange alveoli me. Tidal volume 500 mL, vital capacity 4,600 mL. Diaphragm = main breathing muscle.</p></div>
+<div class="card"><div class="icon">❤️</div><h3>Circulatory</h3><div class="diagram">Heart → <span>Arteries</span> → Capillaries → Veins</div><p>Double circulation, cardiac cycle 0.8 sec, SA node = pacemaker, ECG: P-QRS-T.</p></div>
+<div class="card"><div class="icon">🧠</div><h3>Nervous</h3><div class="diagram">Brain → <span>Spinal Cord</span> → Nerves</div><p>Neuron: dendrite → cell body → axon. Synapse, reflex arc, CNS + PNS. Brain: cerebrum, cerebellum, medulla.</p></div>
+<div class="card"><div class="icon">🫘</div><h3>Excretory</h3><div class="diagram">Kidney → <span>Nephron</span> → Ureter → Bladder</div><p>Nephron = functional unit. GFR ~125 mL/min, urine ~1.5 L/day. ADH water reabsorption badhata hai.</p></div>
+</div></section>
+
+<section id="dna"><p class="eyebrow">Genetics</p><h2>DNA &amp; Genetics — Base Pairing</h2>
+<p class="lead">DNA ek double helix hai. Bases hamesha fixed pairs me judte hain — yehi NEET ka favourite question hai.</p>
+<div class="pair"><button data-pair="AT">A — T<br><small>Adenine–Thymine • 2 H-bonds</small></button><button data-pair="GC">G — C<br><small>Guanine–Cytosine • 3 H-bonds</small></button><button data-pair="AG">A — G ?<br><small>Try karo — sahi hai ya galat?</small></button><button data-pair="TC">T — C ?<br><small>Try karo — sahi hai ya galat?</small></button></div>
+<p id="pair-result" class="note">Upar kisi pair par click karo 👆</p>
+<h3>DNA Replication — 5 Steps</h3>
+<div class="steps">
+<div class="step"><b>1</b><h3>Unwinding</h3><p>Helicase DNA ko kholta hai, replication fork banta hai.</p></div>
+<div class="step"><b>2</b><h3>Primer</h3><p>Primase RNA primer banata hai — starting point.</p></div>
+<div class="step"><b>3</b><h3>Elongation</h3><p>DNA polymerase III nayi strand banata hai (5′→3′).</p></div>
+<div class="step"><b>4</b><h3>Okazaki Fragments</h3><p>Lagging strand par chhote fragments, ligase jodta hai.</p></div>
+<div class="step"><b>5</b><h3>Two DNAs</h3><p>Result: 2 identical DNA — semi-conservative replication.</p></div>
+</div>
+<div class="neet-fact"><b>NEET fact:</b> Chargaff's Rule — A = T aur G = C. Isliye (A+G) = (T+C). DNA ka ek turn = 3.4 nm, 10 base pairs.</div></section>
+
+<section id="ch-breathing"><h2>Test 04 • Breathing and Exchange of Gases</h2>
+<div class="tables"><div><table><tr><th>Term</th><th>Value / Fact</th></tr>
+<tr><td>Tidal Volume (TV)</td><td>500 mL — normal breath</td></tr><tr><td>Vital Capacity (VC)</td><td>4,600 mL (TV+IRV+ERV)</td></tr><tr><td>Residual Volume (RV)</td><td>1,100–1,200 mL</td></tr><tr><td>Total Lung Capacity</td><td>~5,800 mL</td></tr><tr><td>Respiratory rate</td><td>12–16 / min</td></tr></table></div>
+<div class="card"><h3>Yaad rakhne wali baatein</h3><p>• Breathing: inspiration = diaphragm contracts, flat hota hai; expiration = relax.<br>• Gas exchange alveoli me diffusion se — O₂ blood me, CO₂ bahar.<br>• O₂ transport: 97% haemoglobin se (oxyhaemoglobin). CO₂: 70% bicarbonate, 20–25% carbamino-haemoglobin.<br>• Oxygen–haemoglobin curve sigmoid hoti hai.<br>• Disorders: Asthma, Emphysema (cigarette smoking), Occupational lung disease (silicosis/asbestosis).</p><div class="diagram">Air → Nose → Pharynx → Larynx → Trachea → Bronchi → Bronchioles → <span>Alveoli</span></div></div></div></section>
+
+<section id="ch-fluids"><h2>Test 04 • Body Fluids and Circulation</h2>
+<div class="tables"><div><table><tr><th>Component</th><th>Fact</th></tr>
+<tr><td>Plasma</td><td>55% blood, 90–92% water, fibrinogen, globulins, albumins</td></tr>
+<tr><td>RBC</td><td>4.5–5.5 million/mm³, no nucleus, life 120 days</td></tr>
+<tr><td>WBC</td><td>6,000–8,000/mm³, defence</td></tr>
+<tr><td>Platelets</td><td>1,50,000–3,50,000/mm³, clotting</td></tr>
+<tr><td>Cardiac cycle</td><td>0.8 sec: Atrial systole 0.1s, Ventricular systole 0.3s</td></tr><tr><td>ECG</td><td>P = atrial depolarisation, QRS = ventricular, T = ventricular repolarisation</td></tr></table></div>
+<div class="card"><h3>Yaad rakhne wali baatein</h3><p>• Blood groups: ABO + Rh. Universal donor O⁻, universal recipient AB⁺.<br>• Heart: 4 chambers, SA node pacemaker, AV node, Bundle of His.<br>• Double circulation — pulmonary + systemic.<br>• Lymph: tissue fluid, returns to blood, immunity.<br>• Disorders: Hypertension, Coronary artery disease, Angina, Heart failure.</p><div class="diagram">Right Atrium → Right Ventricle → <span>Lungs</span> → Left Atrium → Left Ventricle → Body</div></div></div></section>
+
+<section id="ch-excretory"><h2>Test 04 • Excretory Products and their Elimination</h2>
+<div class="tables"><div><table><tr><th>Step</th><th>Where / How</th></tr>
+<tr><td>Ultrafiltration</td><td>Glomerulus → Bowman's capsule, GFR ~125 mL/min</td></tr>
+<tr><td>Reabsorption</td><td>PCT: glucose, amino acids, 70% water; Loop of Henle: water + salts</td></tr>
+<tr><td>Secretion</td><td>DCT + collecting duct: H⁺, K⁺, drugs</td></tr>
+<tr><td>Urine</td><td>~1–1.5 L/day, 95% water, urea main waste</td></tr>
+<tr><td>ADH</td><td>Water reabsorption ↑, urine volume ↓</td></tr><tr><td>Aldosterone</td><td>Na⁺ reabsorption ↑</td></tr></table></div>
+<div class="card"><h3>Yaad rakhne wali baatein</h3><p>• Nephron = kidney ki functional unit (~1 million per kidney).<br>• Urea ornithine cycle (liver) se banta hai; ammonia most toxic, uric acid least toxic (birds).<br>• Counter-current mechanism: Henle's loop + vasa recta — concentrated urine.<br>• Micturition: bladder se urine bahar — neural control.<br>• Disorders: Uremia, Kidney failure, Kidney stones, Dialysis / transplant.</p><div class="diagram">Afferent Arteriole → <span>Glomerulus</span> → PCT → Loop of Henle → DCT → Collecting Duct</div></div></div></section>
+
+<section id="ch-plantkingdom"><h2>Test 04 • Plant Kingdom</h2>
+<table><tr><th>Group</th><th>Examples</th><th>Key Feature (NEET)</th></tr>
+<tr><td>Algae</td><td>Chlamydomonas, Spirogyra, Fucus, Porphyra</td><td>Chlorophyll, no vascular tissue, water me</td></tr>
+<tr><td>Bryophyta</td><td>Moss (Funaria), Marchantia</td><td>“Amphibians of plant kingdom”, no true roots/stem, water needed for fertilisation</td></tr>
+<tr><td>Pteridophyta</td><td>Fern, Selaginella, Equisetum</td><td>First vascular plants, spores, no seeds</td></tr>
+<tr><td>Gymnosperms</td><td>Pinus, Cycas, Ginkgo</td><td>Naked seeds (no fruit), cones, tallest/oldest trees</td></tr>
+<tr><td>Angiosperms</td><td>Monocots (wheat, rice), Dicots (gram, mango)</td><td>Seeds inside fruit, flowers, double fertilisation</td></tr></table>
+<p class="note">NEET trap: Bryophyta = gametophyte dominant; Pteridophyta/Gymno/Angio = sporophyte dominant. Algae me Volvox colony, Ulothrix filamentous. Gymnosperm me Cycas me coralloid roots + nitrogen-fixing cyanobacteria.</p></section>
+
+<section id="ch-cellcycle"><h2>Test 04 (Repeat) • Cell Cycle and Cell Division</h2>
+<div class="steps">
+<div class="step"><b>G1</b><h3>Growth</h3><p>Cell grows, proteins bante hain.</p></div>
+<div class="step"><b>S</b><h3>DNA Copy</h3><p>DNA replication — 2x DNA.</p></div>
+<div class="step"><b>G2</b><h3>Prepare</h3><p>Mitosis ki taiyaari.</p></div>
+<div class="step"><b>M</b><h3>Mitosis</h3><p>PMAT: Prophase → Metaphase → Anaphase → Telophase.</p></div>
+<div class="step"><b>Meiosis</b><h3>Reduction</h3><p>Meiosis I (reductional) + Meiosis II (equational). Crossing over = Prophase I, pachytene.</p></div>
+</div>
+<p class="note">Mitosis: 2 identical diploid cells (growth/repair). Meiosis: 4 haploid gametes (variation). NEET: metaphase me chromosomes equator par, anaphase me sister chromatids alag.</p></section>
+
+<section id="ch-biomolecules"><h2>Test 04 (Repeat) • Biomolecules &amp; Cell — The Unit of Life</h2>
+<div class="tables"><div><table><tr><th>Biomolecule</th><th>Example / Fact</th></tr>
+<tr><td>Carbohydrates</td><td>Glucose, starch, cellulose; energy</td></tr>
+<tr><td>Proteins</td><td>Enzymes, amino acids (20), peptide bond</td></tr>
+<tr><td>Lipids</td><td>Fats, phospholipids, cholesterol</td></tr>
+<tr><td>Nucleic acids</td><td>DNA, RNA; nucleotides</td></tr>
+<tr><td>Enzymes</td><td>Lock &amp; key, optimum pH/temp, ribozyme = RNA enzyme</td></tr></table></div>
+<div><table><tr><th>Organelle</th><th>Function</th></tr>
+<tr><td>Nucleus</td><td>Control centre, DNA</td></tr><tr><td>Mitochondria</td><td>ATP — powerhouse</td></tr><tr><td>Ribosome</td><td>Protein synthesis</td></tr><tr><td>ER</td><td>Rough: protein, Smooth: lipid</td></tr><tr><td>Golgi</td><td>Packaging, secretion</td></tr><tr><td>Lysosome</td><td>Digestion, suicide bag</td></tr></table></div></div></section>
+
+<section id="quiz"><p class="eyebrow">Practice</p><h2>NEET Quick Quiz — 10 MCQs</h2><p class="lead">Answer karo, turant pata chalega sahi hai ya galat, explanation ke saath.</p>
+<div class="quiz" id="quiz-box"></div><div class="score" id="quiz-score"></div>
+<p style="text-align:center"><button class="btn" id="quiz-reset">↻ Restart Quiz</button></p></section>
+
+<section id="test04-quiz"><p class="eyebrow" style="color:#fde68a">⭐ Test 04 — 22 Nov 2026</p><h2>Test 04 Quiz — 30 MCQs (5 per chapter)</h2>
+<p class="lead">Breathing (5) • Body Fluids (5) • Excretory (5) • Plant Kingdom (5) • Cell Cycle (5) • Biomolecules / Cell (5)</p>
+<div class="quiz" id="test04-quiz-box"></div><div class="score" id="test04-score"></div>
+<p style="text-align:center"><button class="btn" id="test04-reset">↻ Restart Test 04 Quiz</button></p></section>
+
+<section id="notes"><p class="eyebrow">Last-minute revision</p><h2>NEET Revision Notes — Tables</h2>
+<h3>Cell Organelles</h3>
+<table><tr><th>Organelle</th><th>Function</th><th>NEET Name</th></tr>
+<tr><td>Nucleus</td><td>Controls cell, DNA store</td><td>Brain of cell</td></tr>
+<tr><td>Mitochondria</td><td>ATP production</td><td>Powerhouse</td></tr>
+<tr><td>Ribosome</td><td>Protein synthesis</td><td>Protein factory</td></tr>
+<tr><td>Golgi body</td><td>Packaging &amp; secretion</td><td>Post office</td></tr>
+<tr><td>Lysosome</td><td>Digests waste</td><td>Suicide bag</td></tr>
+<tr><td>Chloroplast</td><td>Photosynthesis (plant only)</td><td>Kitchen of cell</td></tr>
+<tr><td>Vacuole</td><td>Storage, turgidity (large in plant)</td><td>Storehouse</td></tr></table>
+<h3 style="margin-top:22px">Plant vs Animal Cell</h3>
+<table><tr><th>Feature</th><th>Plant Cell</th><th>Animal Cell</th></tr>
+<tr><td>Cell wall</td><td>✅ Present (cellulose)</td><td>❌ Absent</td></tr>
+<tr><td>Chloroplast</td><td>✅ Present</td><td>❌ Absent</td></tr>
+<tr><td>Vacuole</td><td>Large, central (90%)</td><td>Small / absent</td></tr>
+<tr><td>Centriole</td><td>❌ Usually absent</td><td>✅ Present</td></tr>
+<tr><td>Shape</td><td>Fixed, rectangular</td><td>Round / irregular</td></tr></table>
+<h3 style="margin-top:22px">Human Body Facts</h3>
+<table><tr><th>Fact</th><th>Number</th></tr>
+<tr><td>Heart beats / day</td><td>~1,00,000</td></tr><tr><td>Blood volume</td><td>~5 L</td></tr><tr><td>RBC life</td><td>120 days</td></tr><tr><td>Tidal volume</td><td>500 mL</td></tr><tr><td>Nephrons / kidney</td><td>~1 million</td></tr><tr><td>Chromosomes in human</td><td>46 (23 pairs)</td></tr><tr><td>Bones in adult</td><td>206</td></tr></table></section>
+</main>
+<footer>3D Biology Lab • Made for NEET 2027 aspirants • NCERT based • No images used — all 3D / CSS • Test 04: 22 Nov 2026 • Good luck! 🍀</footer>
+<script src="app.js"></script>
+</body></html>
